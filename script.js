@@ -12,7 +12,15 @@ function draw() {
     drawSnake();
 }
 
-// Draw Snake
+// Draw Snake (using 'div' and 'tag' to create an inline element in the code
+//could also do for 'p' for creating paragraphs)
 function drawSnake() {
-    snake.forEach
+    snake.forEach((segment) => {
+        const snakeElement = createGameElement('div', 'snake');
+    });
+}
+
+//Create a snake or food cube.div
+function createGameElement(tag, className) {
+    const element = document.createElement(tag);
 }
